@@ -15,7 +15,7 @@ set :wp_localurl, "http://wpdeploytest.dev" # Your local environment URL
 ############################################
 
 set :application, "wp-deploy"
-set :repo_url, "https://vlistrani3five@bitbucket.org/3five/wp-deploy-test.git"
+set :repo_url, "git@bitbucket.org:3five/wp-deploy-test.git"
 set :scm, :git
 
 set :git_strategy, SubmoduleStrategy
