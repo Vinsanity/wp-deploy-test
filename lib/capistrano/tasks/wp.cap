@@ -66,7 +66,7 @@ namespace :wp do
               Username:       #{user}
               Password:       #{password}
               Email address:  #{email}
-              Log in at:      #{wp_siteurl}/wordpress/wp-admin
+              Log in at:      #{wp_siteurl}/wp/wp-admin
             =========================================================================
             \e[0m
             MSG
@@ -139,7 +139,7 @@ namespace :wp do
     desc "Updates the WP core submodule to the latest tag"
     task :update do
       system('
-      cd wordpress
+      cd wp
       git fetch --tags
       latestTag=$(git describe --tags `git rev-list --tags --max-count=1`)
       git checkout $latestTag
